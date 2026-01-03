@@ -1,0 +1,70 @@
+/**
+ * index.css - 전역 스타일 및 Tailwind CSS 설정
+ * 
+ * 이 파일은 Tailwind CSS를 초기화하고 커스텀 애니메이션을 정의합니다.
+ * - Tailwind의 base, components, utilities 레이어 로드
+ * - 스크롤 동작 및 기본 스타일 설정
+ * - Hero 섹션의 blob 애니메이션 정의
+ */
+
+/* Tailwind CSS의 기본 스타일, 컴포넌트, 유틸리티 클래스 로드 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 기본 HTML 요소 스타일 설정 */
+@layer base {
+  html {
+    scroll-behavior: smooth; /* 부드러운 스크롤 동작 활성화 */
+  }
+  
+  body {
+    @apply bg-white text-gray-900; /* 기본 배경색과 텍스트 색상 */
+  }
+}
+
+/* 커스텀 유틸리티 클래스 */
+@layer utilities {
+  /* 스크롤 진행도에 따른 그라데이션 배경 (현재 미사용, 향후 확장용) */
+  .scroll-progress-gradient {
+    background: linear-gradient(
+      to bottom,
+      #f0f9ff 0%,    /* 하늘색 */
+      #e0f2fe 25%,   /* 연한 파란색 */
+      #dbeafe 50%,   /* 보라빛 파란색 */
+      #e0e7ff 75%,   /* 연한 보라색 */
+      #f3e8ff 100%   /* 연한 보라색 */
+    );
+  }
+}
+
+/* Hero 섹션의 blob(구름 모양) 애니메이션 키프레임 */
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1); /* 시작 위치, 원래 크기 */
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1); /* 오른쪽 위로 이동, 10% 확대 */
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9); /* 왼쪽 아래로 이동, 10% 축소 */
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1); /* 원래 위치로 복귀 */
+  }
+}
+
+/* blob 애니메이션 적용 클래스 */
+.animate-blob {
+  animation: blob 7s infinite; /* 7초 동안 무한 반복 */
+}
+
+/* 애니메이션 지연 시간 설정 (여러 blob이 다른 타이밍에 움직이도록) */
+.animation-delay-2000 {
+  animation-delay: 2s; /* 2초 지연 */
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s; /* 4초 지연 */
+}
+

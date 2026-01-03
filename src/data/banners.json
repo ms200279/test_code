@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "type": "highlighted",
+    "title": "Lorem Ipsum Dolor Sit Amet",
+    "description": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "imageSeed": "banner1",
+    "size": "large"
+  },
+  {
+    "id": 2,
+    "type": "basic",
+    "title": "Ut Enim Ad Minim",
+    "description": "Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "imageSeed": "banner2",
+    "size": "medium"
+  },
+  {
+    "id": 3,
+    "type": "image",
+    "title": "Duis Aute Irure",
+    "description": "Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "imageSeed": "banner3",
+    "size": "medium"
+  },
+  {
+    "id": 4,
+    "type": "basic",
+    "title": "Excepteur Sint Occaecat",
+    "description": "Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageSeed": "banner4",
+    "size": "small"
+  },
+  {
+    "id": 5,
+    "type": "highlighted",
+    "title": "Sed Do Eiusmod",
+    "description": "Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    "imageSeed": "banner5",
+    "size": "medium"
+  },
+  {
+    "id": 6,
+    "type": "image",
+    "title": "Quis Nostrud Exercitation",
+    "description": "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.",
+    "imageSeed": "banner6",
+    "size": "large"
+  },
+  {
+    "id": 7,
+    "type": "basic",
+    "title": "Reprehenderit In Voluptate",
+    "description": "Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.",
+    "imageSeed": "banner7",
+    "size": "small"
+  },
+  {
+    "id": 8,
+    "type": "image",
+    "title": "Non Proident Sunt",
+    "description": "In culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde.",
+    "imageSeed": "banner8",
+    "size": "medium"
+  }
+]
+
