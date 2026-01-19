@@ -32,4 +32,3 @@ export default function Section({ id, children, className = '' }) {
     </section>
   )
 }
-
